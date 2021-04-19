@@ -814,3 +814,22 @@ insert  into `sys_user`(`id`,`name`,`loginname`,`address`,`sex`,`remark`,`pwd`,`
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+CREATE TABLE `materiel_info` (
+  `id` int(32) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `materiel_code` varchar(255) DEFAULT NULL COMMENT '物料代码',
+  `materiel_name` varchar(255) DEFAULT NULL COMMENT '物料名称',
+  `materiel_model` varchar(255) DEFAULT NULL COMMENT '物料图号/型号',
+  `materiel_brand` varchar(255) DEFAULT NULL COMMENT '物料材质/品牌',
+  `unit` varchar(255) DEFAULT NULL COMMENT '单位',
+  `demand_type` varchar(255) DEFAULT NULL COMMENT '需求类型',
+  `demand_date` datetime DEFAULT NULL COMMENT '需求日期',
+  `materiel_number` int(11) DEFAULT '0' COMMENT '物料数量',
+  `delivery_date` datetime DEFAULT NULL COMMENT '交货日期',
+  `untaxed_offer` int(255) DEFAULT NULL COMMENT '未税报价',
+  `data_status` varchar(11) DEFAULT NULL COMMENT '数据状态：1-正常 2-出仓历史 3-入仓历史 5-报价历史',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COMMENT='物料信息表';
+
+
