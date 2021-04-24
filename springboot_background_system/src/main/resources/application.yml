@@ -5,7 +5,7 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:3306/oa?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
+      url: jdbc:mysql://127.0.0.1:3306/goods_stock?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
       username: root
       password: 123456
       max-active: 20
